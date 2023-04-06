@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    font-size: 2em;
+    padding: 5em 10em;
+    background-color: rgb(39, 0, 39);
+    height: 60vh;
+}
+
+.titulo {
+    color: blueviolet;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 64px rgb(200, 150, 247);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(199, 139, 255);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.texto, .texto-futuro, .text, .future-text {
+    font-size: 0.8em;
+    text-shadow: 0 0 32px rgb(255, 255, 255);
+    font-family: 'Orbitron', sans-serif;
+    align-items: center;
+    justify-content: center;
+}

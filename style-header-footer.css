@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(to left, rgb(54, 0, 47),rgb(114, 0, 99), rgb(204, 0, 255));
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    animation: degrade-roxo 2s infinite alternate;
+    background-size: 400% 300%;
+    position: fixed;
+    width: 97%;
+}
+
+@keyframes degrade-roxo {
+    0%{
+        background-position-x: 0%;
+    }
+
+    50%{
+        background-position-x: 50%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+.main-nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2em;
+}
+.nav-links, .logo {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.logo:hover {
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(160, 77, 255);
+    text-shadow: 0 0 32px rgb(181, 101, 255);
+}
+
+.nav-links:hover {
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(160, 77, 255);
+    text-shadow: 0 0 32px rgb(181, 101, 255);
+}
+
+.footer-bar {
+    font-size: 18px;
+    background-image: linear-gradient(to left, rgb(54, 0, 47),rgb(114, 0, 99), rgb(204, 0, 255));
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 2em;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: degrade-roxo 2s infinite alternate;
+    background-size: 400% 300%;
+    height: 2.5vh;
+    
+}
+
+.main-nav-footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 2em;
+}
+
+.nome-footer {
+    font-size: 32px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(130, 0, 182);
+    text-shadow: 0 0 32px rgb(255, 255, 255);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.nav-links-footer {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.nav-links-footer:hover {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(160, 77, 255);
+    text-shadow: 0 0 32px rgb(181, 101, 255);
+}
+
+
