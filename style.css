@@ -5,27 +5,30 @@ main {
     flex-direction: column;
     gap: 1.5em;
     font-size: 2em;
-    padding: 5em 10em;
+    padding: 4em 10em;
     background-image: url('/Retro2.jpg');
     background-repeat: none;
     background-size: cover;
+
 }
 
 .titulo {
     color: blueviolet;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 0 0 64px rgb(200, 150, 247);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(199, 139, 255);
     font-family: 'Orbitron', sans-serif;
+    text-align: center;
 }
 
 .subtitulo {
-    font-size: 0.8em;
+    font-size: 1.1em;
     text-shadow: 0 0 32px rgb(255, 255, 255);
     font-family: 'Orbitron', sans-serif;
+    text-align: center;
 }
 
 .foto {
@@ -34,4 +37,39 @@ main {
     border-radius: 20px;
     border: 4px solid blueviolet;
     box-shadow: 0 0 32px rgb(214, 79, 255);
+}
+
+@media (max-width: 1366px) {
+    main {
+        display: flex;
+        height: 15em;
+    }
+
+    .foto {
+        width: 6em;
+        height: 8em;
+    }
+
+    .titulo {
+        font-size: 0.8em;
+    }
+
+    .subtitulo {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding: 5em 10em;
+    }
+}
+
+@media (max-width: 414px) {
+    main {
+        font-size: 22px;
+        display: flex;
+        width: 414px;
+        padding: 220px 0;
+    }
 }

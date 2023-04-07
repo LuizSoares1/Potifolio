@@ -5,7 +5,7 @@ main {
     flex-direction: column;
     gap: 1.5em;
     font-size: 2em;
-    padding: 5em 10em;
+    padding: 6em 10em;
     background-color: rgb(39, 0, 39);
     text-align: center;
     background-image: url(/retro.jpg);
@@ -31,3 +31,32 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 1400px) {
+    main {
+        font-size: 2em;
+        padding: 4em 5em;
+    }
+}
+
+@media (max-width: 414px) {
+    main {
+        width: 390px;
+        font-size: 18px;
+        display: flex;
+        width: 414px;
+        padding: 140px 0;
+    }
+
+    .titulo {
+        font-size: 1.2em;
+    }
+
+    .texto, .texto-futuro, .text, .future-text {
+        text-align: justify;
+        font-size: 0.9em;
+        padding: 1px 15px;
+    }
+}
+
+

@@ -4,8 +4,8 @@ main {
     align-items: center;
     flex-direction: column;
     gap: 1.5em;
-    font-size: 2em;
-    padding: 5em 10em;
+    font-size: 1.7em;
+    padding: 8em 10em;
     background-color: rgb(39, 0, 39);
     height: 60vh;
 }
@@ -21,10 +21,43 @@ main {
     font-family: 'Orbitron', sans-serif;
 }
 
-.texto, .texto-futuro, .text, .future-text {
+.texto{
     font-size: 0.8em;
     text-shadow: 0 0 32px rgb(255, 255, 255);
     font-family: 'Orbitron', sans-serif;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1400px) {
+    main {
+        font-size: 1.2em;
+        height: 35em;
+        padding: 4em 2em;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        font-size: 1.2em;
+        height: 35em;
+        padding: 4em 0;
+    }
+}
+
+@media (max-width: 414px) {
+    main {
+        display: flex;
+        align-items: center;
+        width: 414px;
+        padding: 80px 0px;
+    }
+    
+    .titulo {
+        font-size: 1em;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
 }

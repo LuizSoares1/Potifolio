@@ -74,7 +74,7 @@ body {
     flex-wrap: wrap;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 97%;
     animation: degrade-roxo 2s infinite alternate;
     background-size: 400% 300%;
     height: 2.5vh;
@@ -108,6 +108,45 @@ body {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(160, 77, 255);
     text-shadow: 0 0 32px rgb(181, 101, 255);
+}
+
+@media (max-width: 1400px) {
+    .navbar{
+        width: 96%;
+    }
+
+    .footer-bar{
+        width: 96%;
+    }
+}
+@media (max-width: 1024px) {
+    .navbar{
+        width: 95%;
+    }
+    
+    .footer-bar{
+        width: 96%;
+    }
+}
+
+@media (max-width: 414px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 2em;
+        font-size: 1em;
+        width: 370px;
+        padding: auto 0;
+    }
+
+    .footer-bar {
+        width: 360px;
+        padding: auto 0;
+        align-items: center;
+    }
 }
 
 
